@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render LoginPage correctly 1`] = `
+<div
+  className="box-layout"
+>
+  <div
+    className="box-layout__box"
+  >
+    <h1
+      className="box-layout__title"
+    >
+      Expelliarmus
+    </h1>
+    <p>
+      A handy (even life-saving) spell for removing an object from an enemy's grasp
+    </p>
+    <button
+      className="myButton"
+    >
+      Login with Google
+    </button>
+  </div>
+</div>
+`;

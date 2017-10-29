@@ -1,0 +1,27 @@
+1. moment.js --> in getVisibleExpenses function 
+
+--> solved!
+
+
+2. this.props.dispatch(setTextFilter(e.target.value)) --> in ExpenselistFilters 
+
+
+--> solved ! firts one here)
+
+
+3. if (!amount || amount.match(/^\d{1,}(\.\d{0,2})?$/)) --> in ExpenseForm --> !amount 
+
+
+? --> solved!
+
+
+4. wrapper.find('ExpenseForm').prop('onSubmit')(expenses[1]); --> enzyme Error: This method is only meant to be run on single node. 0 found instead 
+
+
+-- SOLVED! AddExpensePage Snapshot somehow cached old typo in the relative page --> <ExpenseFrom /> --> updating thi snapshot will solved this issue) --> but investigate this problem take at least a couple of stuggling hours) but 
+
+
+5. const mapDispatchToProps/mapStateToProps = (dispatch/state, props???) => {} --> how this props 
+
+
+

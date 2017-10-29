@@ -1,0 +1,6 @@
+# Dependency directories
+node_modules/
+.DS_Store
+public/dist/
+.env.test
+.env.development

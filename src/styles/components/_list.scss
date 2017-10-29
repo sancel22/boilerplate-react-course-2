@@ -1,0 +1,71 @@
+.list-header {
+	background: #2dabf9;
+	border: 1px solid darken(black, 7%);
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: $s-size $m-size;
+}
+
+.list-body {
+	margin-bottom: $m-size;
+	@media (min-width: $desktop-breakpoint) {
+		margin-bottom: $l-size;
+	}
+}
+
+.list-item {
+	display: flex;
+	border-top: none;
+	color: black;
+	margin-top: -1px;
+	flex-direction: column;
+	border: 1px solid darken(black, 7%);
+	padding: $s-size;
+	text-decoration: none;
+	transition: background .3s ease;
+	&:hover {
+		background: rgba(210,255,82,1);
+		background: -moz-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(210,255,82,1)), color-stop(100%, rgba(145,232,66,1)));
+		background: -webkit-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+		background: -o-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+		background: -ms-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+		background: linear-gradient(to right, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1 );
+	}
+	@media (min-width: $desktop-breakpoint) {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: $m-size;
+	}
+}
+
+.list-item--message {
+	align-items: center;
+	justify-content: center;
+	color: black;
+	padding: $m-size;
+	&:hover {
+		background: none;
+	}
+}
+
+.list-item__title {
+	margin: 0;
+	word-break: break-all;
+}
+
+.list-item__sub-title {
+	color: black;
+	font-size: $font-size-small;
+}
+
+.list-item__data {
+	margin: $s-size 0 0 0;
+	@media (min-width: $desktop-breakpoint) {
+		margin: 0;
+		padding-left: $s-size;
+	}
+}
